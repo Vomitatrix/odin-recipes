@@ -1,0 +1,109 @@
+html {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 800;
+    height: 100%;
+}
+
+body {
+    background: 
+    linear-gradient(0deg, 
+    rgba(51, 51, 51, 0.75), 
+    rgba(111, 111, 111, 0.75)),
+    url(https://hips.hearstapps.com/hmg-prod/images/italian-meatballs-329-1547011036.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+
+#section-one {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#recipe-details {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#times {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.times-with-icons {
+    text-align: center;
+    width: 100%;
+    border: 2px dotted white;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+.icon {
+    height: 25px;
+    width: auto;
+}
+
+#ingredients {
+    border-top: 2px solid white;
+}
+
+#ingredients > h2 {
+    padding-left: 5%;
+}
+
+#section-two {
+    width: 45%;
+    justify-content: center;
+}
+
+#directions > h2 {
+    padding-left: 5%;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    body{
+        background-repeat: repeat;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #section-one, #section-two {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}
