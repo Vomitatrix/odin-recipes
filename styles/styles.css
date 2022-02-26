@@ -76,7 +76,13 @@ h2 {
 
 #section-two {
     width: 45%;
+    display: flex;
     justify-content: center;
+}
+
+#directions {
+    margin: auto;
+
 }
 
 #directions > h2 {
